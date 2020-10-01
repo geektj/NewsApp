@@ -46,6 +46,7 @@ class Newsdesc extends Component {
 
                             <div className="article-content">
                                 <div className="desc-para">{info.description}</div>
+                                <span>Read More click to this Url- <a href={info.url} target="_blank">{info.url}</a></span>
                             </div>
                         </div>
                     </div>
