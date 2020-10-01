@@ -1,28 +1,31 @@
 import React from "react";
+import "../assets/sass/style.scss";
+// import { Link } from "react-router-dom";
 
-class Header extends React.Component{
-    constructor(props){
+
+class Header extends React.Component {
+    constructor(props) {
         super(props);
         this.state = {
 
         }
     }
-    render(){
-        return(
+    render() {
+        return (
             <>
-            {/* navigation-bar */}
+                {/* navigation-bar */}
                 <div className="nav-bar">
                     <div className="nav-row">
                         {/* product-title-name */}
                         <div className="right-side">
                             <div className="title">
-                                <div className="title-name">News</div>
+                                <a href="/"><div className="title-name">News</div></a>
                             </div>
                         </div>
                         {/* nav-bar-items */}
                         <div className="centered-items">
                             <ul>
-                                <a><li className="nav-items active-class">Home</li></a>
+                                <a href="/"><li className="nav-items active-class">Home</li></a>
                                 <a><li className="nav-items">Business</li></a>
                                 <a><li className="nav-items">Tech</li></a>
                                 <a><li className="nav-items">Sports</li></a>
@@ -36,7 +39,7 @@ class Header extends React.Component{
                             </div>
                         </div>
                     </div>
-                </div>  
+                </div>
             </>
         )
     }
